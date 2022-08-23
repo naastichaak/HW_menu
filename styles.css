@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 50px;
+    height: 100vh;
+    background-color: grey;
+    transition: width 1s;
+}
+
+.container:hover{
+    width: 300px;
+}
+
+.title{
+    rotate: 90deg;
+    width: 150px;
+    position: relative;
+    top: 50%;
+    right: 50px;
+    transition: all 1s;
+}
+
+.container:hover > .title{
+    right: -200px;
+    color: grey;
+}
+
+.menu{
+    margin-left: 40px;
+    margin-top: 50px;
+    position: relative;
+    right: 200px;
+    transition: all 1s;
+}
+
+.container:hover > .menu{
+    right: 0px;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.item:last-child{
+    margin-bottom: 0px;
+}
+
+.link-item:hover{
+    color: orange;
+}
+
+::marker{
+    color: orange;
+}
